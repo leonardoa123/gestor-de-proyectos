@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @formulary %>
+
+<div>
+  <%= link_to "Edit this formulary", edit_formulary_path(@formulary) %> |
+  <%= link_to "Back to formularies", formularies_path %>
+
+  <%= button_to "Destroy this formulary", @formulary, method: :delete %>
+</div>

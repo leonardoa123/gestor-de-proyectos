@@ -1,0 +1,16 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Formularies</h1>
+
+<div id="formularies">
+  <% @formularies.each do |formulary| %>
+    <%= render formulary %>
+    <p>
+      <%= link_to "Show this formulary", formulary %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New formulary", new_formulary_path %>
+
+
